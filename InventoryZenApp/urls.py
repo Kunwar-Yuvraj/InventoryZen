@@ -8,7 +8,7 @@ urlpatterns = [
     
     path('InventoryList', InventoryList.as_view(template_name='InventoryList.html'), name='InventoryList'),
     
-    path('logout', LogoutView.as_view(next_page='index'), name='logout'),
+    path('logout/', LogoutView.as_view(next_page='index'), name='logout'),
     
     path('InventoryAdd', InventoryAdd.as_view(template_name='InventoryAdd.html'), name='InventoryAdd'),
     
